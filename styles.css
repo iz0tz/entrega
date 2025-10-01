@@ -1,0 +1,8 @@
+/* Estilos comunes */
+.soft-card { border-radius: .75rem; box-shadow: 0 .25rem 1rem rgba(0,0,0,.06); }
+.section-title { position: relative; padding-left: 1rem; }
+.section-title::before { content:""; position:absolute; left:0; top:.2rem; bottom:.2rem; width:.25rem; border-radius:.25rem; background:#212529; opacity:.9; }
+/* Placeholder cuadrado para productos */
+.img-placeholder { aspect-ratio: 1 / 1; background: #f8f9fa; border: 2px dashed #ced4da; border-radius: .5rem; display:flex; align-items:center; justify-content:center; font-size:.9rem; color:#6c757d; user-select:none; }
+/* Opcional: imágenes uniformes en cards de index si añades fotos reales */
+.card-img-top { aspect-ratio: 16 / 9; object-fit: cover; }

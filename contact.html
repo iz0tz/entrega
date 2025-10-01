@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Tienda de fútbol: botas, camisetas y complementos.">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  <title>Contacto · Tienda</title>
+  <style>
+    .hero-wrap { background: linear-gradient(135deg, #f8f9fa 0%, #eef1f4 100%); }
+    .chip { display:inline-block; padding:.35rem .6rem; border:1px solid rgba(0,0,0,.1); border-radius:999px; font-size:.85rem; background:#fff; }
+    .soft-card { border-radius: 1rem; box-shadow: 0 .25rem 1rem rgba(0,0,0,.06); }
+    .section-title { position:relative; padding-left:1rem; }
+    .section-title::before { content:""; position:absolute; left:0; top:.2rem; bottom:.2rem; width:.25rem; border-radius:.25rem; background:#212529; opacity:.9; }
+    @media (min-width: 768px) { .hero-eq { min-height: 360px; } }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./index.html">Tienda</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDark" aria-controls="navbarDark" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarDark">
+      <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+        <li class="nav-item"><a class="nav-link " aria-current="page" href="./index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link " href="./productos.html">Productos</a></li>
+        <li class="nav-item"><a class="nav-link active" href="./contact.html">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link " href="./registro.html">Registro</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<header class="hero-wrap border-bottom py-5">
+  <div class="container hero-eq">
+    <div class="row justify-content-center align-items-center g-4">
+      <div class="col-12 col-lg-10">
+        <div class="bg-white soft-card p-4 p-md-5">
+          <h1 class="h3 mb-3">Contacto</h1>
+          <p class="text-muted mb-4">
+            ¿Dudas sobre <strong>botas</strong>, <strong>camisetas</strong> o <strong>complementos</strong>? Escríbenos y te ayudamos.
+          </p>
+          <div class="mb-3 d-flex flex-wrap gap-2">
+            <span class="chip">📞 Tel: <a href="tel:+34999999999" class="text-decoration-none">+34 999 99 99 99</a></span>
+            <span class="chip">✉️ Email: <a href="mailto:contacto@mitienda.fake" class="text-decoration-none">contacto@mitienda.fake</a></span>
+            <span class="chip">📸 Instagram: <a href="#" class="text-decoration-none">@mitienda_futbol</a></span>
+            <span class="chip">🎵 TikTok: <a href="#" class="text-decoration-none">@mitienda_futbol</a></span>
+            <span class="chip">💬 WhatsApp: <a href="#" class="text-decoration-none">+34 999 99 99 99</a></span>
+          </div>
+          <p class="mb-0 text-muted">Horario: Lun–Vie 10:00–20:00</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="container my-5">
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-10">
+      <h2 class="h4 section-title mb-4">Envíanos un mensaje</h2>
+      <div class="card soft-card">
+        <div class="card-body p-4 p-md-5">
+          <form action="#" method="post" class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                <div class="invalid-feedback">Indica tu nombre.</div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="tunombre@email.com" required>
+                <div class="invalid-feedback">Indica un email válido.</div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="telefono" class="form-label">Teléfono (opcional)</label>
+                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="+34 600 000 000" pattern="^[0-9+\s()-]{6,}$">
+                <div class="invalid-feedback">Revisa el formato del teléfono.</div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="asunto" class="form-label">Asunto</label>
+                <select id="asunto" name="asunto" class="form-select" required>
+                  <option value="" selected disabled>Selecciona una opción…</option>
+                  <option value="botas">Consulta sobre botas</option>
+                  <option value="camisetas">Consulta sobre camisetas</option>
+                  <option value="complementos">Espinilleras y complementos</option>
+                  <option value="pedido">Estado de un pedido</option>
+                  <option value="otros">Otros</option>
+                </select>
+                <div class="invalid-feedback">Selecciona un asunto.</div>
+              </div>
+              <div class="col-12">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos en qué podemos ayudarte" required></textarea>
+                <div class="invalid-feedback">Escribe tu mensaje.</div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="privacidad" required>
+                  <label class="form-check-label" for="privacidad">Acepto la política de privacidad (RGPD).</label>
+                  <div class="invalid-feedback">Debes aceptar la política de privacidad.</div>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-dark">Enviar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="bg-dark text-white mt-5 pt-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-12 col-md-5">
+        <a href="./index.html" class="text-decoration-none text-white">
+          <h5 class="mb-3">Tienda</h5>
+        </a>
+        <p class="text-white-50 mb-3">
+          Tu tienda de fútbol: botas, camisetas y complementos. Calidad, buen precio y asesoramiento.
+        </p>
+        <p class="small text-white-50 mb-0">Horario: Lun–Vie 10:00–20:00</p>
+      </div>
+      <div class="col-6 col-md-3">
+        <h6 class="text-uppercase small mb-3">Navegación</h6>
+        <ul class="list-unstyled">
+          <li class="mb-2"><a class="link-light text-decoration-none" href="./index.html">Inicio</a></li>
+          <li class="mb-2"><a class="link-light text-decoration-none" href="./productos.html">Productos</a></li>
+          <li class="mb-2"><a class="link-light text-decoration-none" href="./contact.html">Contacto</a></li>
+          <li class="mb-2"><a class="link-light text-decoration-none" href="./registro.html">Registro</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-4">
+        <h6 class="text-uppercase small mb-3">Contacto</h6>
+        <ul class="list-unstyled text-white-50 mb-3">
+          <li class="mb-2"><strong class="text-white">Tel.:</strong> <a class="link-light text-decoration-none" href="tel:+34999999999">+34 999 99 99 99</a></li>
+          <li class="mb-2"><strong class="text-white">Email:</strong> <a class="link-light text-decoration-none" href="mailto:contacto@mitienda.fake">contacto@mitienda.fake</a></li>
+          <li class="mb-2"><strong class="text-white">IG:</strong> <a class="link-light text-decoration-none" href="#">@mitienda_futbol</a></li>
+          <li><strong class="text-white">WhatsApp:</strong> <a class="link-light text-decoration-none" href="#">+34 999 99 99 99</a></li>
+        </ul>
+        <div>
+          <a href="#" class="btn btn-outline-light btn-sm">Privacidad</a>
+          <a href="#" class="btn btn-outline-light btn-sm ms-2">Términos</a>
+        </div>
+      </div>
+    </div>
+    <hr class="border-secondary my-4">
+    <div class="d-flex flex-column flex-md-row align-items-center justify-content-between pb-4">
+      <span class="small text-white-50">© 2025 Tienda de Fútbol</span>
+      <a href="#" class="small link-light text-decoration-none">Cookies</a>
+    </div>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<script>
+  (function () {
+    'use strict';
+    const forms = document.querySelectorAll('.needs-validation');
+    Array.from(forms).forEach(form => {
+      form.addEventListener('submit', event => {
+        if (!form.checkValidity()) { event.preventDefault(); event.stopPropagation(); }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  })();
+</script>
+</body>
+</html>
