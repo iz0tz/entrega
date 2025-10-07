@@ -14,11 +14,8 @@ El **nav** y el **footer** enlazan así (rutas relativas):
 - Registro → `./registro.html`
 
 ## Imágenes de productos
-En `productos.html`, sustituye este bloque en cada tarjeta:
-```html
-<div class="img-placeholder">Imagen producto X</div>
-```
-por tu imagen real:
+En `productos.html`, tenemos cada tarjeta de la siguiente manera para que se muestre la imagen del producti:
+
 ```html
 <img src="./assets/img/mi_foto.jpg" class="card-img-top" alt="Nombre del producto">
 ```
