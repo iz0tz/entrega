@@ -13,8 +13,19 @@ El **nav** y el **footer** enlazan así (rutas relativas):
 - Contacto → `./contact.html`
 - Registro → `./registro.html`
 
+#### 🎨 Paleta de colores principal
+
+| Color | Hex | Uso principal |
+|-------|------|----------------|
+| ![#0d6efd](https://via.placeholder.com/15/0d6efd/000000?text=+) | `#0d6efd` | Botones primarios, acentos |
+| ![#212529](https://via.placeholder.com/15/212529/000000?text=+) | `#212529` | Navbar y footer |
+| ![#6c757d](https://via.placeholder.com/15/6c757d/000000?text=+) | `#6c757d` | Texto secundario |
+| ![#f8f9fa](https://via.placeholder.com/15/f8f9fa/000000?text=+) | `#f8f9fa` | Fondo claro / botones outline |
+| ![#dee2e6](https://via.placeholder.com/15/dee2e6/000000?text=+) | `#dee2e6` | Bordes, divisores |
+
+
 ## Imágenes de productos
-En `productos.html`, tenemos cada tarjeta de la siguiente manera para que se muestre la imagen del producti:
+En `productos.html`, tenemos cada tarjeta de la siguiente manera para que se muestre la imagen del producto:
 
 ```html
 <img src="./assets/img/mi_foto.jpg" class="card-img-top" alt="Nombre del producto">
