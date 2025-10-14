@@ -1,21 +1,19 @@
 $(function() {
-  // Oculta todas las secciones excepto la de inicio
+  // Oculta todas las secciones y muestra solo "inicio" al principio
   $(".page-section").hide();
   $("#inicio").show();
 
-  // Cuando haces clic en un enlace del menú
+  // Cuando se hace clic en un enlace del menú
   $(".navbar-nav a").click(function(e) {
     e.preventDefault();
 
-    // Coge el texto del enlace y lo pasa a minúsculas
-    const destino = $(this).text().trim().toLowerCase();
+    // Tomamos el texto del enlace (por ejemplo "Productos")
+    let destino = $(this).text().trim().toLowerCase();
 
-    // Oculta todas las secciones y muestra solo la elegida
+    // Oculta todas las secciones
     $(".page-section").hide();
-    $("#" + destino).show();
 
-    // Cambia el enlace activo
-    $(".navbar-nav a").removeClass("active");
-    $(this).addClass("active");
+    // Muestra solo la sección que coincide
+    $("#" + destino).show();
   });
 });
