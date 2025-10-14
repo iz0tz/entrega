@@ -13,15 +13,19 @@ El **nav** y el **footer** enlazan así (rutas relativas):
 - Contacto → `./contact.html`
 - Registro → `./registro.html`
 
-#### 🎨 Paleta de colores principal
+## 🎨 Paleta de colores
 
-| Color | Hex | Uso principal |
-|-------|------|----------------|
-| ![#0d6efd](https://via.placeholder.com/15/0d6efd/000000?text=+) | `#0d6efd` | Botones primarios, acentos |
-| ![#212529](https://via.placeholder.com/15/212529/000000?text=+) | `#212529` | Navbar y footer |
-| ![#6c757d](https://via.placeholder.com/15/6c757d/000000?text=+) | `#6c757d` | Texto secundario |
-| ![#f8f9fa](https://via.placeholder.com/15/f8f9fa/000000?text=+) | `#f8f9fa` | Fondo claro / botones outline |
-| ![#dee2e6](https://via.placeholder.com/15/dee2e6/000000?text=+) | `#dee2e6` | Bordes, divisores |
+**Colores principales del sitio:**
+
+- Azul primario — `#0d6efd`
+- Negro grisáceo (navbar/footer) — `#212529`
+- Gris medio (texto secundario) — `#6c757d`
+- Blanco grisáceo (fondos claros) — `#f8f9fa`
+- Gris claro (bordes/divisores) — `#dee2e6`
+
+![Paleta de colores](./assets/img/paleta_colores.png)
+
+🔗 [Ver paleta en Coolors](https://coolors.co/0d6efd-212529-6c757d-f8f9fa-dee2e6)
 
 
 ## Imágenes de productos
