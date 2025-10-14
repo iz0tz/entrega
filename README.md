@@ -23,8 +23,6 @@ El **nav** y el **footer** enlazan así (rutas relativas):
 - Blanco grisáceo (fondos claros) — `#f8f9fa`
 - Gris claro (bordes/divisores) — `#dee2e6`
 
-![Paleta de colores](./assets/img/paleta_colores.png)
-
 🔗 [Ver paleta en Coolors](https://coolors.co/0d6efd-212529-6c757d-f8f9fa-dee2e6)
 
 
