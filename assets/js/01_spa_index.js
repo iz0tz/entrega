@@ -17,3 +17,11 @@ $(function() {
     $("#" + destino).show();
   });
 });
+
+// --- BUSCADOR DE PRODUCTOS ---
+$("#buscador").on("keyup", function () {
+  const valor = $(this).val().toLowerCase();
+  $("#productos .card").filter(function () {
+    $(this).toggle($(this).text().toLowerCase().includes(valor));
+  });
+});
