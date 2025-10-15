@@ -25,3 +25,22 @@ $("#buscador").on("keyup", function () {
     $(this).toggle($(this).text().toLowerCase().includes(valor));
   });
 });
+
+// --- FORMULARIO DE CONTACTO CON VALIDACIÓN Y MODAL ---
+$("form").on("submit", function (e) {
+  e.preventDefault(); // evita que recargue la página
+
+  // Verifica si el formulario cumple las validaciones HTML5
+  if (this.checkValidity()) {
+    // Muestra el modal de confirmación
+    const modal = new bootstrap.Modal($("#modalGracias"));
+    modal.show();
+
+    // Limpia el formulario
+    this.reset();
+    this.classList.remove("was-validated");
+  } else {
+    // Activa los estilos de validación de Bootstrap
+    this.classList.add("was-validated");
+  }
+});
