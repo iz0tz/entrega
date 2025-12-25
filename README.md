@@ -13,8 +13,21 @@ El **nav** y el **footer** enlazan así (rutas relativas):
 - Contacto → `./contact.html`
 - Registro → `./registro.html`
 
+## 🎨 Paleta de colores
+
+**Colores principales del sitio:**
+
+- Azul primario — `#0d6efd`
+- Negro grisáceo (navbar/footer) — `#212529`
+- Gris medio (texto secundario) — `#6c757d`
+- Blanco grisáceo (fondos claros) — `#f8f9fa`
+- Gris claro (bordes/divisores) — `#dee2e6`
+
+🔗 [Ver paleta en Coolors](https://coolors.co/0d6efd-212529-6c757d-f8f9fa-dee2e6)
+
+
 ## Imágenes de productos
-En `productos.html`, tenemos cada tarjeta de la siguiente manera para que se muestre la imagen del producti:
+En `productos.html`, tenemos cada tarjeta de la siguiente manera para que se muestre la imagen del producto:
 
 ```html
 <img src="./assets/img/mi_foto.jpg" class="card-img-top" alt="Nombre del producto">

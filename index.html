@@ -9,6 +9,7 @@
   <title>Sitio de ejemplo · Guía de estilos</title>
 </head>
 <body>
+  <!--Barra de navegacion-->
 <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="./index.html">Tienda</a>
@@ -17,16 +18,19 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarDark">
       <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-        <li class="nav-item"><a class="nav-link active" aria-current="page" href="./index.html">Inicio</a></li>
-        <li class="nav-item"><a class="nav-link " href="./productos.html">Productos</a></li>
-        <li class="nav-item"><a class="nav-link " href="./contact.html">Contacto</a></li>
-        <li class="nav-item"><a class="nav-link " href="./registro.html">Registro</a></li>
+        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link " href="#">Productos</a></li>
+        <li class="nav-item"><a class="nav-link " href="#">Contacto</a></li>
+        <li class="nav-item"><a class="nav-link " href="#">Registro</a></li>
       </ul>
     </div>
   </div>
 </nav>
+
+<!--Contenido-->
 <main class="container my-5">
-  <section class="mb-5">
+  <!--Index-->
+  <section id="inicio" class="page-section mb-5">
     <div class="row justify-content-center">
       <div class="col-12 col-md-10 col-lg-8">
         <div class="card">
@@ -39,8 +43,6 @@
         </div>
       </div>
     </div>
-  </section>
-  <section>
     <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
       <div class="col d-flex">
         <div class="card h-100 mx-auto">
@@ -74,12 +76,317 @@
       </div>
     </div>
   </section>
+
+  <!--productos-->
+  <section id="productos" class="page-section">
+  <h2 class="h4 section-title mb-4">Catálogo</h2>
+   <!-- 🔍 Buscador de productos -->
+  <div class="mb-4 text-center">
+    <input
+      type="text"
+      id="buscador"
+      class="form-control w-50 mx-auto"
+      placeholder="Buscar producto..."
+    >
+  </div>
+
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+
+    <div class="col d-flex">
+      <div class="card soft-card h-100 w-100">
+        <img src="./assets/img/fgpro.jpg" class="card-img-top" alt="Botas FG Pro">
+        <div class="card-body">
+          <h5 class="card-title mb-1">Botas FG Pro</h5>
+          <p class="card-text small text-muted mb-2">Tracción para césped natural seco; ajuste ceñido y ligereza para sprint.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#" class="btn btn-outline-dark btn-sm">Ver</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col d-flex">
+      <div class="card soft-card h-100 w-100">
+        <img src="./assets/img/speed.jpeg" class="card-img-top" alt="Botas AG Speed">
+        <div class="card-body">
+          <h5 class="card-title mb-1">Botas AG Speed</h5>
+          <p class="card-text small text-muted mb-2">Suela optimizada para césped artificial; upper flexible y buen agarre.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#" class="btn btn-outline-dark btn-sm">Ver</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col d-flex">
+      <div class="card soft-card h-100 w-100">
+        <img src="./assets/img/control.jpg" class="card-img-top" alt="Botas SG Control">
+        <div class="card-body">
+          <h5 class="card-title mb-1">Botas SG Control</h5>
+          <p class="card-text small text-muted mb-2">Tacos metálicos para barro/lluvia; estabilidad y control en superficies blandas.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#" class="btn btn-outline-dark btn-sm">Ver</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col d-flex">
+      <div class="card soft-card h-100 w-100">
+        <img src="./assets/img/localtech.jpeg" class="card-img-top" alt="Camiseta local tech">
+        <div class="card-body">
+          <h5 class="card-title mb-1">Camiseta Local Tech</h5>
+          <p class="card-text small text-muted mb-2">Tejido transpirable y de secado rápido; corte deportivo cómodo.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#" class="btn btn-outline-dark btn-sm">Ver</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col d-flex">
+      <div class="card soft-card h-100 w-100">
+        <img src="./assets/img/entrenamiento.webp" class="card-img-top" alt="Camiseta Entrenamiento Aero">
+        <div class="card-body">
+          <h5 class="card-title mb-1">Camiseta Entrenamiento Aero</h5>
+          <p class="card-text small text-muted mb-2">Malla lateral para ventilación; ideal para sesiones intensas.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#" class="btn btn-outline-dark btn-sm">Ver</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col d-flex">
+      <div class="card soft-card h-100 w-100">
+        <img src="./assets/img/pantaloneta.webp" class="card-img-top" alt="Pantalón Corto Performance">
+        <div class="card-body">
+          <h5 class="card-title mb-1">Pantalón Corto Performance</h5>
+          <p class="card-text small text-muted mb-2">Ligero y resistente; cintura elástica con cordón y bolsillos laterales.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#" class="btn btn-outline-dark btn-sm">Ver</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col d-flex">
+      <div class="card soft-card h-100 w-100">
+        <img src="./assets/img/calcetines.webp" class="card-img-top" alt="Calcetines Grip">
+        <div class="card-body">
+          <h5 class="card-title mb-1">Calcetines Grip</h5>
+          <p class="card-text small text-muted mb-2">Zonas antideslizantes en la planta; sujeción del arco y talón reforzado.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#" class="btn btn-outline-dark btn-sm">Ver</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col d-flex">
+      <div class="card soft-card h-100 w-100">
+        <img src="./assets/img/espinilleras-personalizadas-home.png" class="card-img-top" alt="Espinilleras Pro Shield">
+        <div class="card-body">
+          <h5 class="card-title mb-1">Espinilleras Pro Shield</h5>
+          <p class="card-text small text-muted mb-2">Placa rígida + acolchado interno; correas ajustables, cómodas y seguras.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#" class="btn btn-outline-dark btn-sm">Ver</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col d-flex">
+      <div class="card soft-card h-100 w-100">
+        <img src="./assets/img/guantes.jpeg" class="card-img-top" alt="Guantes de Portero Elite">
+        <div class="card-body">
+          <h5 class="card-title mb-1">Guantes de Portero Elite</h5>
+          <p class="card-text small text-muted mb-2">Látex de alto agarre en seco y mojado; muñequera envolvente.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#" class="btn btn-outline-dark btn-sm">Ver</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col d-flex">
+      <div class="card soft-card h-100 w-100">
+        <img src="./assets/img/balon.jpeg" class="card-img-top" alt="Balon">
+        <div class="card-body">
+          <h5 class="card-title mb-1">Balón</h5>
+          <p class="card-text small text-muted mb-2">Costuras reforzadas y buen toque; vuelo estable para prácticas diarias.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#" class="btn btn-outline-dark btn-sm">Ver</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col d-flex">
+      <div class="card soft-card h-100 w-100">
+        <img src="./assets/img/mochila.jpeg" class="card-img-top" alt="Mochila Equipo">
+        <div class="card-body">
+          <h5 class="card-title mb-1">Mochila Equipo</h5>
+          <p class="card-text small text-muted mb-2">Compartimento principal amplio, bolsillo para botas y funda para botella.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#" class="btn btn-outline-dark btn-sm">Ver</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col d-flex">
+      <div class="card soft-card h-100 w-100">
+        <img src="./assets/img/botella.jpg" class="card-img-top" alt="Botellas Termica">
+        <div class="card-body">
+          <h5 class="card-title mb-1">Botella Térmica</h5>
+          <p class="card-text small text-muted mb-2">Acero inoxidable; mantiene frío/caliente y tapa antifugas.</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <a href="#" class="btn btn-outline-dark btn-sm">Ver</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--Contacto-->
+<section id="contacto" class="page-section">
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-10">
+      <h2 class="h4 section-title mb-4">Envíanos un mensaje</h2>
+      <div class="card soft-card">
+        <div class="card-body p-4 p-md-5">
+          <form action="#" method="post" class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                <div class="invalid-feedback">Indica tu nombre.</div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="tunombre@email.com" required>
+                <div class="invalid-feedback">Indica un email válido.</div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="telefono" class="form-label">Teléfono (opcional)</label>
+                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="+34 600 000 000" pattern="^[0-9+\s()-]{6,}$">
+                <div class="invalid-feedback">Revisa el formato del teléfono.</div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="asunto" class="form-label">Asunto</label>
+                <select id="asunto" name="asunto" class="form-select" required>
+                  <option value="" selected disabled>Selecciona una opción…</option>
+                  <option value="botas">Consulta sobre botas</option>
+                  <option value="camisetas">Consulta sobre camisetas</option>
+                  <option value="complementos">Espinilleras y complementos</option>
+                  <option value="pedido">Estado de un pedido</option>
+                  <option value="otros">Otros</option>
+                </select>
+                <div class="invalid-feedback">Selecciona un asunto.</div>
+              </div>
+              <div class="col-12">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Cuéntanos en qué podemos ayudarte" required></textarea>
+                <div class="invalid-feedback">Escribe tu mensaje.</div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="privacidad" required>
+                  <label class="form-check-label" for="privacidad">Acepto la política de privacidad (RGPD).</label>
+                  <div class="invalid-feedback">Debes aceptar la política de privacidad.</div>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-dark">Enviar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--Registrar-->
+<section id="registro" class="page-section">
+  <div class="row justify-content-center">
+    <div class="col-12 col-lg-10">
+      <h2 class="h4 section-title mb-4">Registro</h2>
+      <div class="card soft-card">
+        <div class="card-body p-4 p-md-5">
+          <form action="#" method="post" class="needs-validation" novalidate id="form-registro">
+            <div class="row g-3">
+              <div class="col-12 col-md-6">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                <div class="invalid-feedback">Indica tu nombre.</div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="apellidos" class="form-label">Apellidos</label>
+                <input type="text" class="form-control" id="apellidos" name="apellidos" placeholder="Tus apellidos" required>
+                <div class="invalid-feedback">Indica tus apellidos.</div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="tunombre@email.com" required>
+                <div class="invalid-feedback">Indica un email válido.</div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="telefono" class="form-label">Teléfono (opcional)</label>
+                <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="+34 600 000 000" pattern="^[0-9+\s()-]{6,}$">
+                <div class="invalid-feedback">Revisa el formato del teléfono.</div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="password" name="password" minlength="6" required>
+                <div class="form-text">Mínimo 6 caracteres.</div>
+                <div class="invalid-feedback">Introduce una contraseña válida (mín. 6).</div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="password2" class="form-label">Repite la contraseña</label>
+                <input type="password" class="form-control" id="password2" name="password2" minlength="6" required>
+                <div class="invalid-feedback">Las contraseñas no coinciden.</div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="fecha" class="form-label">Fecha de nacimiento (opcional)</label>
+                <input type="date" class="form-control" id="fecha" name="fecha">
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="provincia" class="form-label">Provincia</label>
+                <select id="provincia" name="provincia" class="form-select" required>
+                  <option value="" selected disabled>Selecciona…</option>
+                  <option>A Coruña</option><option>Álava</option><option>Albacete</option><option>Alicante</option>
+                  <option>Almería</option><option>Asturias</option><option>Ávila</option><option>Badajoz</option>
+                  <option>Barcelona</option><option>Burgos</option><option>Cádiz</option><option>Ciudad Real</option>
+                  <option>Córdoba</option><option>Cuenca</option><option>Girona</option><option>Granada</option>
+                  <option>Guadalajara</option><option>Gipuzkoa</option><option>Huelva</option><option>Huesca</option>
+                  <option>Illes Balears</option><option>Jaén</option><option>La Rioja</option><option>Las Palmas</option>
+                  <option>León</option><option>Lleida</option><option>Lugo</option><option>Madrid</option>
+                  <option>Málaga</option><option>Murcia</option><option>Navarra</option><option>Ourense</option>
+                  <option>Palencia</option><option>Pontevedra</option><option>Salamanca</option><option>Segovia</option>
+                  <option>Sevilla</option><option>Soria</option><option>Tarragona</option><option>Santa Cruz de Tenerife</option>
+                  <option>Teruel</option><option>Toledo</option><option>Valencia</option><option>Valladolid</option>
+                  <option>Bizkaia</option><option>Zamora</option><option>Zaragoza</option>
+                </select>
+                <div class="invalid-feedback">Selecciona tu provincia.</div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="privacidad" required>
+                  <label class="form-check-label" for="privacidad">Acepto la política de privacidad (RGPD).</label>
+                  <div class="invalid-feedback">Debes aceptar la política de privacidad.</div>
+                </div>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-dark">Crear cuenta</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 </main>
+
 <footer class="bg-dark text-white mt-5 pt-5">
   <div class="container">
     <div class="row g-4">
       <div class="col-12 col-md-5">
-        <a href="./index.html" class="text-decoration-none text-white">
+        <a href="#" class="text-decoration-none text-white">
           <h5 class="mb-3">Tienda</h5>
         </a>
         <p class="text-white-50 mb-3">
@@ -87,15 +394,17 @@
         </p>
         <p class="small text-white-50 mb-0">Horario: Lun–Vie 10:00–20:00</p>
       </div>
+
       <div class="col-6 col-md-3">
         <h6 class="text-uppercase small mb-3">Navegación</h6>
         <ul class="list-unstyled">
-          <li class="mb-2"><a class="link-light text-decoration-none" href="./index.html">Inicio</a></li>
-          <li class="mb-2"><a class="link-light text-decoration-none" href="./productos.html">Productos</a></li>
-          <li class="mb-2"><a class="link-light text-decoration-none" href="./contact.html">Contacto</a></li>
-          <li class="mb-2"><a class="link-light text-decoration-none" href="./registro.html">Registro</a></li>
+          <li class="mb-2"><a class="link-light text-decoration-none" href="#">Inicio</a></li>
+          <li class="mb-2"><a class="link-light text-decoration-none" href="#">Productos</a></li>
+          <li class="mb-2"><a class="link-light text-decoration-none" href="#">Contacto</a></li>
+          <li class="mb-2"><a class="link-light text-decoration-none" href="#">Registro</a></li>
         </ul>
       </div>
+
       <div class="col-6 col-md-4">
         <h6 class="text-uppercase small mb-3">Contacto</h6>
         <ul class="list-unstyled text-white-50 mb-3">
@@ -110,6 +419,7 @@
         </div>
       </div>
     </div>
+
     <hr class="border-secondary my-4">
     <div class="d-flex flex-column flex-md-row align-items-center justify-content-between pb-4">
       <span class="small text-white-50">© 2025 Tienda de Fútbol</span>
@@ -117,6 +427,29 @@
     </div>
   </div>
 </footer>
+
+<!-- 🔽 AQUÍ VA EL MODAL -->
+<div class="modal fade" id="modalGracias" tabindex="-1" aria-labelledby="modalGraciasLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalGraciasLabel">¡Gracias!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+      <div class="modal-body">
+        Tu mensaje se ha enviado correctamente. ¡Nos pondremos en contacto contigo pronto!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Enlaces-->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="./assets/js/01_spa_index.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
